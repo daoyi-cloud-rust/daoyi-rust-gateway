@@ -1,4 +1,4 @@
-use salvo::prelude::*;
+use daoyi_cloud_common::*;
 
 #[tokio::main]
 async fn main() {
