@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-daoyi-cloud-common = "0.1.2"
+daoyi-cloud-common = { version = "0.2.5", features = ["web"] }

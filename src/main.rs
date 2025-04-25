@@ -1,9 +1,8 @@
-use daoyi_cloud_common::*;
+use daoyi_cloud_common::web::*;
 
 #[tokio::main]
 async fn main() {
-    tracing_subscriber::fmt().init();
-
+    app_init(None).await.unwrap();
     // In this example, if the requested URL begins with <http://127.0.0.1:5800/>, the proxy goes to
     // <https://www.rust-lang.org>; if the requested URL begins with <http://localhost:5800/>, the proxy
     // goes to <https://crates.io>.
